@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AppMainForm</class>
+ <widget class="QMainWindow" name="AppMainForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>AppMainForm</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="mnuNotes">
+    <property name="title">
+     <string>Заметки</string>
+    </property>
+    <addaction name="actAddNote"/>
+   </widget>
+   <widget class="QMenu" name="mnuFrames">
+    <property name="title">
+     <string>Фреймы</string>
+    </property>
+    <addaction name="actAddList"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Проект</string>
+    </property>
+    <addaction name="actOpenFromFile"/>
+    <addaction name="actSaveToFile"/>
+    <addaction name="actClearMemory"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="mnuFrames"/>
+   <addaction name="mnuNotes"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actAddNote">
+   <property name="text">
+    <string>Добавить заметку</string>
+   </property>
+  </action>
+  <action name="actAddList">
+   <property name="text">
+    <string>Добавить фрейм</string>
+   </property>
+  </action>
+  <action name="actOpenFromFile">
+   <property name="text">
+    <string>Открыть из файла...</string>
+   </property>
+  </action>
+  <action name="actSaveToFile">
+   <property name="text">
+    <string>Сохранить в файл...</string>
+   </property>
+  </action>
+  <action name="actClearMemory">
+   <property name="text">
+    <string>Очистить</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
